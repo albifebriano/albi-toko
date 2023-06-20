@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+
+
+/*exzoom*/
+#exzoom
+{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+}
+
+/*slider beranda*/
+/*login*/
+.wrapper{
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 150px;
+
+
+}
+/*daftar*/
+.row{
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+/*footer*/
+footer{
+  position: bottom;
+  bottom: 0px;
+  width: 100%;
+  /* margin-bottom: 10px; */
+  background: #4e0357;
+}
+
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.main-content .box a{
+  color: white;
+}
+
+
+.box h1{
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: silver;
+  
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+
+.left .content .social{
+  font-size: 25px;
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 8px;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content{
+	font-size: 17px;
+}
+.center .content .fas{
+  font-size: 1.9375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.3725rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right .content {
+  display: flex;
+  vertical-align: top;
+  height: 50px;
+  width: 25%;
+  vertical-align: middle;
+}
+.copyright {
+  color: rgb(242, 170, 38);
+  margin-top: 20px;
+
+}
+
+@media screen and (max-width: 900px){
+  footer{
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 3vh;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+ 
+}
